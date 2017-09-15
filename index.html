@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" media="(max-width:768px)" href="mobli.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+	<title>201</title>
+</head>
+<style type="text/css">
+.text  {
+	width: 100%;
+  height: 50px;
+	background: #000;
+	font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  
+}
+
+
+.active{
+	color: red;
+	font-size: 30px;
+    
+}
+.wen{
+  color: #000;
+  margin-top: 20px;
+  float: left;
+  margin-left: 10px;
+}
+</style>
+<body>
+  <div class="text">九月不撸？不存在的</div>
+  <a  class="wen" href="http://www.126sihu.com">本人常用</a>
+  <a  class="wen" href="http://www.youjizz.com">国际友人</a>
+  <a  class="wen" href="http://www.vv2069.pw">栋哥专属</a>
+  <a  class="wen" href="http://www.888mbmb.com">久远</a>
+  <a  class="wen" href="http://www.9999tp.com">噗嗤</a>
+  <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+  <script type="text/javascript">
+  var text=$('.text');
+  setInterval(function(){
+  	if (text.hasClass('active')) {
+          text.removeClass('active');
+  	}
+
+  	 else {text.addClass('active')}
+  },500)
+ var card=$('#card');
+ card.click(function(){
+ 	if (text.is(':visible')) {
+ 		text.slideUp();
+ 	} else {
+ 		text.slideDown();
+ 	}
+
+ })
+
+  </script>
+</body>
+</html>
